@@ -1,0 +1,80 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #864AF9;
+}
+
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 20px 20px;
+    background-color: #ececec;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.ans{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    text-align: right;
+    color: black;
+    pointer-events: none;
+    background-color: #ececec;
+}
+
+.buttons button{
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.buttons button[data-value="0"] {
+    grid-column: span 2;
+    width: calc(100% - 1px);
+    text-align: left;
+    padding: 0 28px 0;
+    /* height: 80px;    */
+}
+
+.buttons button.double {
+    grid-column: span 2;
+    text-align: left;
+    padding: 0 28px 0;
+}
+
+/* .buttons button:active{
+    transform: scale(0.99);
+} */
+
+.buttons button:hover {
+    background-color: #864AF9;
+    color: white;
+}
+
+.operator{
+    color: #864AF9;
+}
